@@ -1,0 +1,28 @@
+{
+  "name": "cycle-notification-most-driver",
+  "version": "0.0.1",
+  "description": "A Cycle.js driver that displays Humane notifications, to be used with most-run",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiatjaf/cycle-notification-most-driver.git"
+  },
+  "dependencies": {
+    "humane-js": "*",
+    "loads-css": "*"
+  },
+  "keywords": [
+    "cycle",
+    "cyclejs",
+    "humane",
+    "most",
+    "driver",
+    "notification"
+  ],
+  "author": "Giovanni T. Parra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fiatjaf/cycle-notification-most-driver/issues"
+  },
+  "homepage": "https://github.com/fiatjaf/cycle-notification-most-driver#readme"
+}
