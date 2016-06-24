@@ -1,13 +1,13 @@
 import humane from 'humane-js'
-import loadCSS from 'loads-css'
+import {loadCSS} from 'fg-loadcss'
 
 export function makeNotificationDriver (opts = {}) {
-  loadCSS('https://cdnjs.cloudflare.com/ajax/libs/humane-js/3.2.2/humane.min.js', noop)
+  loadCSS('https://cdnjs.cloudflare.com/ajax/libs/humane-js/3.2.2/humane.min.js')
 
   opts.timeout = opts.timeout || 7000
   opts.baseCls = opts.baseCls || 'humane-flatty'
 
-  loadCSS('https://cdnjs.cloudflare.com/ajax/libs/humane-js/3.2.2/themes/' + opts.baseCls.split('-')[1] + '.min.css', noop)
+  loadCSS('https://cdnjs.cloudflare.com/ajax/libs/humane-js/3.2.2/themes/' + opts.baseCls.split('-')[1] + '.min.css')
 
   const notifier = humane.create(opts)
 
@@ -32,5 +32,3 @@ export function makeNotificationDriver (opts = {}) {
     })
   }
 }
-
-function noop () {}
