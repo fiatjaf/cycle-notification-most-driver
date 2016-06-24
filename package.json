@@ -1,7 +1,7 @@
 {
   "name": "cycle-notification-most-driver",
   "sourceType": "module",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A Cycle.js driver that displays Humane notifications, to be used with most-run",
   "main": "index.js",
   "repository": {
@@ -27,6 +27,9 @@
     "babel-preset-es2015": "^6.3.13",
     "babelify": "^7.2.0",
     "browserify": "11.0.1"
+  },
+  "scripts": {
+    "prepublish": "mkdir -p dist && browserify index.js > dist/index.js"
   },
   "keywords": [
     "cycle",
