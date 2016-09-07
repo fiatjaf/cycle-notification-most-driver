@@ -2,8 +2,6 @@ import humane from 'humane-js'
 import {loadCSS} from 'fg-loadcss'
 
 export function makeNotificationDriver (opts = {}) {
-  loadCSS('https://cdnjs.cloudflare.com/ajax/libs/humane-js/3.2.2/humane.min.js')
-
   opts.timeout = opts.timeout || 7000
   opts.baseCls = opts.baseCls || 'humane-flatty'
 
